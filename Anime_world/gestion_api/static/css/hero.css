@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #E5E5E5;
+}
+
+#hero{
+    height: 100vh;
+    width: 100vw;
+    background-color: #0077B6;
+    padding: 12vh 1rem 1rem 1rem;
+    position: relative;
+    z-index: -1;
+}
+.personnal_card{
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    left: 0;
+    background: radial-gradient(rgba( 0, 0, 0, 0.05 ),rgba(202, 240, 248, 0.025),rgba( 100, 20, 234, 0.003 ));
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#search_bar::placeholder{
+    font-size: 20px;
+    color: #000;
+}
+#search_bar {
+    font-size: 20px;
+    color: #000;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    
+}
+p{
+    text-align: center;
+    font-size: x-large;
+}
+.description{
+    margin-top:2vh;
+}
+.button{
+height: 100%;
+width: 100%;
+position: relative;
+
+}
+#start_btn{
+    border: none;
+    background: none;
+    padding: 15px 50px;
+    background: #FCA311;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: x-large;
+    bottom: 0;
+}

@@ -1,0 +1,134 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 10vh;
+    padding: 0.5rem 1rem ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #14213D;
+}
+nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height:100%;
+    width: 20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    position: absolute; 
+    height: 15vh;
+    filter:brightness(80%);
+    object-fit: cover;
+}
+.links{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.links li a{
+    text-decoration: none;
+    /* color: lightgray;*/
+    color: white;
+}
+.links li a:hover{
+
+    color: white;
+
+}
+.search_section{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 30%;
+  
+}
+#search_bar{
+    padding: 0 0.5rem;
+    height: 60%;
+    width: 100%;
+    border: 1px solid lightgray;
+
+outline:dashed #FCA311;}
+.hamburger{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.hamburger i{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        position: relative;
+    }
+    .menu{
+
+        height: 100vh;
+        width: 60%;
+        padding: 0 1rem;
+        flex-direction: column;
+        position: absolute;
+        right: -100%;
+        top: 0;
+        /* background: #FCA311; */
+        background-color: #14213D;
+    }
+    .search_section{
+        margin-top: 5rem;
+        height: 10vh;
+        width: 100%;
+        order: 1;
+    }
+    #search_bar{
+        outline: none;
+    }
+    .links{
+        width: 100%;
+        padding-top: 2rem;
+        order: 2;
+        font-size:25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    .links li{
+        height: 5vh;
+        width: 100%;
+        text-align: left;
+    }
+    .hamburger{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .hamburger i{
+        transform: scale(1.5);
+    }
+
+  }
+ 
